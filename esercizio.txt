@@ -1,6 +1,5 @@
 Apro il frigo
 Scorro il frigo
-
     ?SE l'elemento fa parte di ricetta
         lo prendo
     ALTRIMENTI scorro oltre
@@ -10,11 +9,14 @@ Peso gli ingredienti
         prendo quella quantità
         assemblo i vari ingredienti
         accendo il forno
+    ALTRIMENTI peso ancora
 
     ?SE forno è ventilato AND la temperatrura è uguale a 200 gradi
         inforno la lasagna
         imposto un timer di 30 minuti
+    ALTRIMENTI aspetto
 
-    ?SE il timer è maggiore uguale a 30 minuti
-        Tiro fuori la lasagna
+    ?SE il timer è uguale a 30 minuti
+        tiro fuori la lasagna
         mangio la lasagna
+    ALTRIMENTI aspetto
